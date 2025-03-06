@@ -1,5 +1,5 @@
 <?php
-require_once "models/UtilisateurManager.php";
+require_once "models/managers/UtilisateurManager.php";
 
 class UtilisateurController {
     private UtilisateurManager $manager;

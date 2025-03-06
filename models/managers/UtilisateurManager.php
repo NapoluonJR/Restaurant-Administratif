@@ -1,6 +1,6 @@
 <?php
 require_once "config/bdd.php";
-require_once "models/Utilisateur.php";
+require_once "models/classes/Utilisateur.php";
 
 class UtilisateurManager {
     private PDO $db;
