@@ -1,33 +1,25 @@
 <?php
-
 class Tarif {
-    private int $id;
-    private float $montant;
-    private int $idCategorie;
-    private int $idPrestation;
+    private int $id_prestation;
+    private int $id_categorie;
+    private float $prix;
 
-    public function __construct(int $id, float $montant, int $idCategorie, int $idPrestation) {
-        $this->id = $id;
-        $this->montant = $montant;
-        $this->idCategorie = $idCategorie;
-        $this->idPrestation = $idPrestation;
-    }
-
-    public function getId(): int {
-        return $this->id;
-    }
-
-    public function getMontant(): float {
-        return $this->montant;
-    }
-
-    public function getIdCategorie(): int {
-        return $this->idCategorie;
+    public function __construct(int $id_prestation, int $id_categorie, float $prix) {
+        $this->id_prestation = $id_prestation;
+        $this->id_categorie = $id_categorie;
+        $this->prix = $prix;
     }
 
     public function getIdPrestation(): int {
-        return $this->idPrestation;
+        return $this->id_prestation;
+    }
+
+    public function getIdCategorie(): int {
+        return $this->id_categorie;
+    }
+
+    public function getPrix(): float {
+        return $this->prix;
     }
 }
-
 ?>
